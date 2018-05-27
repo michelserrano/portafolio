@@ -18,6 +18,7 @@ public cargar_productos(){
   this.http.get('https://webangular-4f410.firebaseio.com/productos_idx.json') 
             .subscribe( res => {
               console.log(res);
+              this.cargado = true;
               this.productos = res.json();
             });
 }
