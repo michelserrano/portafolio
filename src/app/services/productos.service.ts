@@ -17,10 +17,16 @@ public cargar_productos(){
   this.cargado = false;
   this.http.get('https://webangular-4f410.firebaseio.com/productos_idx.json') 
             .subscribe( res => {
-              console.log(res);
+              //console.log(res);
               this.cargado = true;
               this.productos = res.json();
             });
+}
+
+public cargar_producto(cod:string){
+
+  return this.http.get('https://webangular-4f410.firebaseio.com/productos/'+cod+'.json');
+
 }
 
 }
