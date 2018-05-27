@@ -21,7 +21,7 @@ export class ProductoComponent {
       _ps.cargar_producto(this.cod_prod)
           .subscribe(res =>{
             this.producto = res.json();
-            console.log(this.producto);
+            //console.log(this.producto);
           })
 
     });

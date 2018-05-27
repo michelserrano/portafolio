@@ -15,7 +15,7 @@ termino:string = undefined;
 
     route.params.subscribe(res =>{
       this.termino = res['termino'];
-      console.log(this.termino);
+      //console.log(this.termino);
 
       _ps.buscar_productos(this.termino);
     })
