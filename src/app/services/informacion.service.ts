@@ -30,7 +30,7 @@ export class InformacionService {
               .subscribe(data =>{
                 this.info_about = data.json();
                 this.cargada_about = true;
-                console.log(data)
+                //console.log(data)
               })
   }
 
